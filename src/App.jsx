@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Dashboard from "./components/Dashboard";
 import Login from "./components/Login";
 import AddNewDoctor from "./components/AddNewDoctor";
@@ -19,7 +19,7 @@ const App = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:4000/api/v1/user/admin/me",
+          "https://medicare-r4rk.onrender.com/api/v1/user/admin/me",
           {
             withCredentials: true,
           }
