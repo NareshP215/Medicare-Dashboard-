@@ -33,7 +33,7 @@ const App = () => {
       }
     };
     fetchUser();
-  }, [isAuthenticated]);
+  }, []); // 👈 run only once
 
   return (
     <>
